@@ -1,5 +1,8 @@
 {
   "baseFontSize": 16,
   "cssTheme": "",
-  "accentColor": "#2563eb"
+  "accentColor": "#2563eb",
+  "enabledCssSnippets": [
+    "custom-styling"
+  ]
 }
