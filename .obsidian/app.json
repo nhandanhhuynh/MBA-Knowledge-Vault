@@ -9,5 +9,5 @@
   "livePreview": true,
   "readableLineLength": true,
   "tabSize": 4,
-  "spellcheck": true
+  "spellcheck": false
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Group-Work/Xe-dien-Alpha-Obsidian-Slides.md",
+                "file": "05_Group-Work/Xe-dien-Alpha.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Xe-dien-Alpha-Obsidian-Slides"
+              "title": "Xe-dien-Alpha"
             }
           }
         ]
@@ -185,6 +185,8 @@
   },
   "active": "b3d4816a37614ce2",
   "lastOpenFiles": [
+    "05_Group-Work/Xe-dien-Alpha.md",
+    "07_AI-Workspace/Outputs/Generate-Charts.ipynb",
     "07_AI-Workspace/Outputs/Xe-dien-Alpha-Obsidian-Slides.md",
     "07_AI-Workspace/Outputs/Xe-dien-Alpha-Charts.ipynb",
     "07_AI-Workspace/Outputs/create_pptx.py",

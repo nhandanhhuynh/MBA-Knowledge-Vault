@@ -1,5 +1,6 @@
 ---
 theme: default
+tags:
 ---
 
 # CUỘC ĐUA XE ĐIỆN TẠI ALPHA
@@ -189,12 +190,9 @@ Từ độc quyền (EcoDrive thống trị) → Độc quyền nhóm / Cạnh t
 
 ---
 
-## Ghi chú về biểu đồ
-
-Các biểu đồ là **đồ thị kinh tế lý thuyết** minh họa xu hướng dịch chuyển Cung-Cầu, MC/MR, và độ co giãn. KHÔNG phải số liệu thống kê thực tế từ Alpha.
 
 ---
 
-# Cảm ơn đã lắng nghe
+# Cảm ơn mọi người đã lắng nghe
 
 Hỏi đáp & Thảo luận

@@ -4,13 +4,13 @@
 
 ## [DẪN NHẬP]
 
-Xin chào mọi người. Hôm nay nhóm mình sẽ phân tích một tình huống về thị trường xe điện tại quốc gia Alpha. Câu chuyện này cho thấy kinh tế vi mô giải thích được rất nhiều điều đang xảy ra trong thực tế – từ chính sách Chính phủ, đến quyết định của doanh nghiệp, đến hành vi người tiêu dùng.
+Xin chào mọi người. Hôm nay em sẽ trình bày phân tích một tình huống về thị trường xe điện tại quốc gia Alpha. 
 
 ---
 
 ## [DẪN NHẬP – MÔ TẢ TÌNH HUỐNG]
 
-Bối cảnh là thế này: Chính phủ Alpha tuyên bố khai tử xe xăng vào năm 2035. Họ dùng "gọng kìm" chính sách – đánh thuế nặng xe xăng, đồng thời trợ cấp trực tiếp cho người mua xe điện. Thu nhập người dân tăng 10% mỗi năm. EcoDrive – hãng nội địa – chiếm 60% thị phần nhờ quy mô lớn. Tuy nhiên, hơn 10 đối thủ ngoại quốc vừa xâm nhập, giá Lithium tăng do đứt gãy chuỗi cung ứng, và giá điện sạc cũng có xu hướng tăng.
+Bối cảnh là: Chính phủ Alpha tuyên bố khai tử xe xăng vào năm 2035. Họ dùng "gọng kìm" chính sách – đánh thuế nặng xe xăng, đồng thời trợ cấp trực tiếp cho người mua xe điện. Thu nhập người dân tăng 10% mỗi năm. EcoDrive – hãng nội địa – chiếm 60% thị phần nhờ quy mô lớn. Tuy nhiên, hơn 10 đối thủ ngoại quốc vừa xâm nhập, giá Lithium tăng do đứt gãy chuỗi cung ứng, và giá điện sạc cũng có xu hướng tăng.
 
 ---
 
@@ -40,9 +40,8 @@ Phía cầu (Demand – tức lượng người muốn mua) có ba lực đẩy 
 
 Phía cung (Supply – tức lượng nhà sản xuất sẵn sàng bán) thì phức tạp hơn. Công nghệ pin tiến bộ giúp giảm chi phí sản xuất – đẩy đường cung sang phải (sẵn sàng cung nhiều hơn). Nhưng đồng thời, Lithium khan hiếm và đắt đỏ đẩy chi phí biên (Marginal Cost – chi phí để sản xuất thêm 1 đơn vị) lên cao – kéo đường cung ngược lại. Hiệu ứng ròng là cung bị kìm, không dịch phải được nhiều.
 
-Kết quả – và đây là **kết luận cho câu hỏi thứ nhất**: Khi cầu dịch mạnh sang phải mà cung không theo kịp, áp lực lên giá bán cuối cùng là TĂNG. Điểm cân bằng mới (nơi cung gặp cầu) ở mức giá cao hơn. Sản lượng tăng nhưng giá cũng tăng – đó là áp lực mà toàn thị trường phải chịu.
+**kết luận cho câu hỏi thứ nhất**  Kết quả:   Khi cầu dịch mạnh sang phải mà cung không theo kịp, áp lực lên giá bán cuối cùng là TĂNG. Điểm cân bằng mới (nơi cung gặp cầu) ở mức giá cao hơn. Sản lượng tăng nhưng giá cũng tăng – đó là áp lực mà toàn thị trường phải chịu.
 
-*(Lưu ý: Biểu đồ minh họa trên slide là đồ thị kinh tế lý thuyết mô phỏng xu hướng dịch chuyển Cung-Cầu, không phải số liệu thống kê thực tế từ Alpha. Mục đích là giúp người xem hình dung cơ chế vận hành.)*
 
 ---
 
