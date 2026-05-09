@@ -1,6 +1,6 @@
 # Lời trình bày – Cuộc đua xe điện tại Alpha
 
-Xin chào mọi người. Hôm nay nhóm mình sẽ kể cho các bạn nghe một câu chuyện – câu chuyện về quốc gia Alpha và cuộc chuyển đổi lịch sử từ xe xăng sang xe điện. Qua câu chuyện này, chúng ta sẽ thấy kinh tế vi mô không phải là lý thuyết xa vời – mà nó giải thích chính xác những gì đang xảy ra trên thị trường.
+Xin chào mọi người. Hôm nay nhóm mình sẽ kể cho các bạn nghe một câu chuyện – câu chuyện về quốc gia Alpha và cuộc chuyển đổi lịch sử từ xe xăng sang xe điện. 
 
 ---
 
