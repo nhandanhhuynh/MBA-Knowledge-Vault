@@ -19,26 +19,23 @@ Phân tích kinh tế vi mô từ một thị trường đang chuyển đổi
 - Giá điện sạc có xu hướng tăng
 
 ---
+## Bóc tách dữ liệu (chi tiết)
 
-## Bóc tách dữ liệu từ tình huống
-
-| Biến số | Dữ liệu | Ý nghĩa |
-|---------|----------|----------|
-| Thu nhập đầu người | +10%/năm | Làm người mua muốn mua nhiều hơn |
-| Thuế xe xăng | Tăng vọt | Làm xe xăng kém hấp dẫn |
-| Trợ cấp xe điện | Trực tiếp cho người mua | Kéo người mua về phía xe điện |
-| Giá Lithium | Tăng (đứt gãy cung ứng) | Làm sản xuất xe điện đắt hơn |
-| Công nghệ pin | Tiến bộ | Làm sản xuất xe điện rẻ hơn |
-| Thị phần EcoDrive | 60% | Ai bán, bán bao nhiêu |
-| Đối thủ mới | 10+ hãng ngoại | Cạnh tranh khốc liệt hơn |
-| Giá điện sạc | Xu hướng tăng | Chi phí đi kèm khi dùng xe điện |
-| Chiến lược | R&D + Quảng cáo | Giành khách bằng giá trị, không giảm giá |
+| Biến số                        | Dữ liệu                           | Loại biến                                |
+| ------------------------------ | --------------------------------- | ---------------------------------------- |
+| Thu nhập bình quân đầu người   | Tăng 10%/năm                      | Biến ngoại sinh – tác động cầu           |
+| Thuế tiêu thụ đặc biệt xe xăng | Tăng vọt                          | Biến ngoại sinh – tác động hàng thay thế |
+| Trợ cấp mua xe điện            | Trực tiếp cho người mua           | Biến ngoại sinh – dịch chuyển cầu        |
+| Giá Lithium                    | Tăng (đứt gãy chuỗi cung ứng)     | Biến ngoại sinh – tác động cung          |
+| Công nghệ pin                  | Tiến bộ, giảm chi phí sản xuất BQ | Biến ngoại sinh – tác động cung          |
+| Thị phần EcoDrive              | 60%                               | Cấu trúc thị trường                      |
+| Số đối thủ mới                 | Hơn 10 thương hiệu ngoại          | Cấu trúc thị trường                      |
+| Giá điện sạc                   | Xu hướng tăng                     | Hàng hóa bổ sung                         |
+| Chiến lược cạnh tranh          | R&D + Quảng cáo (phi giá)         | Cạnh tranh phi giá                       |
 
 ---
 
-## Phân tích biến động thị trường
-
-*(Trả lời câu hỏi 1)*
+## 1. Phân tích biến động thị trường
 
 ---
 
@@ -70,9 +67,9 @@ Phân tích kinh tế vi mô từ một thị trường đang chuyển đổi
 
 ---
 
-## Hệ thống hàng hóa liên quan
+## 2. Hệ thống hàng hóa liên quan
 
-*(Trả lời câu hỏi 2)*
+
 
 ---
 
@@ -84,7 +81,7 @@ Phân tích kinh tế vi mô từ một thị trường đang chuyển đổi
 
 **Hàng bổ sung – Giá điện sạc:**
 - Điện sạc đắt → chi phí vận hành xe điện tăng
-- Lợi ích cận biên mỗi km bị giảm
+- Lợi ích cận biên (MU) mỗi km bị giảm
 - Ưu thế kinh tế của xe điện bị xoi mòn
 
 ---
@@ -97,16 +94,16 @@ Phân tích kinh tế vi mô từ một thị trường đang chuyển đổi
 
 ---
 
-## Bài toán của EcoDrive
+## 3.Bài toán của EcoDrive
 
-*(Trả lời câu hỏi 3)*
+
 
 ---
 
 ### Khi Lithium tăng: MC↑ → Điều chỉnh sản lượng và giá
 
-- EcoDrive 60% thị phần nhờ lợi thế quy mô
-- Lithium tăng → Chi phí biên (MC) dịch lên
+- EcoDrive 60% thị phần nhờ lợi thế quy mô (Economies of Scale)
+- Lithium tăng → Chi phí biên (MC – Marginal Cost) dịch lên
 - Điểm tối ưu MR=MC dịch sang trái
 
 **Quyết định:**
@@ -123,10 +120,7 @@ Phân tích kinh tế vi mô từ một thị trường đang chuyển đổi
 > EcoDrive nên **giảm sản lượng** xuống mức tối ưu mới và **tăng giá vừa phải**. Lợi thế quy mô cho phép họ chịu áp lực chi phí tốt hơn đối thủ nhỏ.
 
 ---
-
-## Luật chơi mới: Cạnh tranh phi giá
-
-*(Trả lời câu hỏi 4)*
+## 4.Luật chơi mới: Cạnh tranh phi giá
 
 ---
 
@@ -155,7 +149,7 @@ Từ độc quyền (EcoDrive thống trị) → Độc quyền nhóm / Cạnh t
 
 ![Khác biệt hóa](images/04_differentiation.png)
 
-> Khác biệt hóa sản phẩm **giảm độ co giãn của cầu theo giá** – khách hàng trung thành hơn, ít nhạy cảm với giá hơn – từ đó hãng duy trì quyền lực thị trường cao hơn.
+> Khác biệt hóa sản phẩm **giảm độ co giãn của cầu theo giá** (Price Elasticity ↓) – khách hàng trung thành hơn, ít nhạy cảm với giá hơn – từ đó hãng duy trì quyền lực thị trường cao hơn.
 
 ---
 
@@ -168,8 +162,9 @@ Từ độc quyền (EcoDrive thống trị) → Độc quyền nhóm / Cạnh t
 | **Câu 3** | MR=MC: Giảm sản lượng, tăng giá vừa phải, dựa lợi thế quy mô |
 | **Câu 4** | Khác biệt hóa → Cầu ít co giãn → Quyền lực thị trường cao |
 
+
 ---
 
-# Cảm ơn đã lắng nghe
+# Cảm ơn mọi người đã lắng nghe
 
 Hỏi đáp & Thảo luận
