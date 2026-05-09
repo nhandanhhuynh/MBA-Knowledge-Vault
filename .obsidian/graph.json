@@ -9,28 +9,50 @@
   "colorGroups": [
     {
       "query": "path:01_Courses/01_Active",
-      "color": { "a": 1, "rgb": 2531071 }
+      "color": {
+        "a": 1,
+        "rgb": 2531071
+      }
     },
     {
       "query": "path:01_Courses/02_Completed",
-      "color": { "a": 1, "rgb": 6579300 }
+      "color": {
+        "a": 1,
+        "rgb": 6579300
+      }
     },
     {
       "query": "path:02_Thesis",
-      "color": { "a": 1, "rgb": 16711680 }
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
     },
     {
       "query": "path:00_Dashboard",
-      "color": { "a": 1, "rgb": 16776960 }
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
     },
     {
       "query": "path:03_Resources",
-      "color": { "a": 1, "rgb": 65280 }
+      "color": {
+        "a": 1,
+        "rgb": 65280
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.7132754626224416,
+  "close": true
 }

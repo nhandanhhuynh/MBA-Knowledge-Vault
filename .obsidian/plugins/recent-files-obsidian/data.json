@@ -1,0 +1,20 @@
+{
+  "recentFiles": [
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Kanban-Board",
+      "path": "00_Dashboard/Kanban-Board.md"
+    },
+    {
+      "basename": "AI-Workflow-Guide",
+      "path": "00_Dashboard/AI-Workflow-Guide.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
