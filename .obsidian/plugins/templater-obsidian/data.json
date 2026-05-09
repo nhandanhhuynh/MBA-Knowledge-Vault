@@ -1,5 +1,5 @@
 {
-  "templates_folder": "07_Templates",
+  "templates_folder": "04_Templates",
   "templates_pairs": [["", ""]],
   "trigger_on_file_creation": false,
   "auto_jump_to_cursor": true,
@@ -9,12 +9,8 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "01_Core-Subjects",
-      "template": "07_Templates/TPL-Lecture-Note.md"
-    },
-    {
-      "folder": "02_Major-Subjects",
-      "template": "07_Templates/TPL-Lecture-Note.md"
+      "folder": "01_Courses/01_Active",
+      "template": "04_Templates/TPL-Lecture-Note.md"
     }
   ],
   "syntax_highlighting": true,

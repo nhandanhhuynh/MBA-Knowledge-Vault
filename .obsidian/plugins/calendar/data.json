@@ -5,5 +5,5 @@
   "showWeeklyNote": true,
   "weeklyNoteFolder": "00_Dashboard",
   "weeklyNoteFormat": "YYYY-[W]ww",
-  "weeklyNoteTemplate": "07_Templates/TPL-Weekly-Review.md"
+  "weeklyNoteTemplate": "04_Templates/TPL-Weekly-Review.md"
 }

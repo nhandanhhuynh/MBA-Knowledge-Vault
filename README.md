@@ -1,50 +1,55 @@
 # MBA Knowledge Vault
 
-> Personal MBA study vault managed with **Obsidian** and structured following **ISO 19650** document management principles.
+Personal MBA study vault managed with **Obsidian**, structured with **ISO 19650**-inspired lifecycle principles, and designed for **AI-friendly** collaboration (Cursor, Claude, Codex).
 
 ## Structure
 
 ```
 028_MBA/
-├── 00_Dashboard/        → Navigation hub, MOCs, Daily Notes
-├── 01_Core-Subjects/    → Kiến thức cơ sở ngành (Core)
-├── 02_Major-Subjects/   → Kiến thức chuyên ngành (Major)
-├── 03_Electives/        → Môn tự chọn (Electives)
-├── 04_Thesis/           → Luận văn tốt nghiệp
-├── 05_Resources/        → Books, Articles, Case Studies
-├── 06_Projects/         → Group & Individual Projects
-├── 07_Templates/        → Note templates
-├── 08_Archive/          → Completed/Archived content
-└── 09_Attachments/      → Images, PDFs, files
+├── 00_Dashboard/           → Navigation, guides, daily notes
+├── 01_Courses/
+│   ├── 01_Active/          → Courses currently enrolled
+│   ├── 02_Completed/       → Finished courses (for reference)
+│   └── 03_Template-Course/ → Copy this to start a new course
+├── 02_Thesis/              → Graduation thesis (multi-semester)
+├── 03_Resources/           → Shared resources across program
+├── 04_Templates/           → Master templates
+│   ├── Course-Template/    → Full course folder template
+│   └── Deliverable-Template/ → Assignment lifecycle template
+├── 90_Archive/             → Cold storage
+└── 99_Attachments/         → Shared attachments
+```
+
+## Each Course Contains
+
+```
+<Course>/
+├── 00_Course-Home.md       → Entry point (AI reads this first)
+├── 01_Admin/               → Syllabus, Schedule, Rubric
+├── 02_Lectures/            → Lecture notes
+├── 03_References/          → Core, Supplement, Reading-Notes
+├── 04_Deliverables/        → Assignments with lifecycle folders
+├── 05_Group-Work/          → Team collaboration
+├── 06_Exam-Prep/           → Exam preparation
+├── 07_AI-Workspace/        → Context, Prompts, Outputs for AI
+└── 99_Attachments/         → Course-specific files
+```
+
+## Deliverable Lifecycle (ISO 19650 Inspired)
+
+```
+Brief → Outline → Draft → WIP → Review → Submit → Feedback
 ```
 
 ## Getting Started
 
-1. Open this folder as an Obsidian vault
-2. Enable community plugins when prompted
+1. Open folder as Obsidian vault
+2. Enable community plugins (Dataview, Templater, Calendar, Kanban, Git)
 3. Start from `00_Dashboard/Home.md`
-
-## Naming Convention (ISO 19650 Based)
-
-- **Folders**: `[Number]_[Category-Name]`
-- **Files**: `[Type]-[SubjectCode]-[Description].md`
-- **Types**: `LN` (Lecture), `ASG` (Assignment), `CS` (Case Study), `SUM` (Summary)
-
-## Plugins Used
-
-| Plugin | Purpose |
-|--------|---------|
-| Dataview | Dynamic queries & tables |
-| Templater | Smart templates |
-| Calendar | Daily/Weekly note calendar |
-| Kanban | Task management boards |
-| Obsidian Git | Auto-sync with GitHub |
-| Excalidraw | Diagrams & visual notes |
 
 ## Sync
 
-This vault auto-syncs with GitHub via the Obsidian Git plugin (every 10 minutes).
+Auto-syncs with GitHub via Obsidian Git plugin.
 
 ---
-
 *Created: 2026-05-09*

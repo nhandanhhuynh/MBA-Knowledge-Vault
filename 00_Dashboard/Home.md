@@ -1,119 +1,113 @@
 ---
 tags:
+  - mba
   - dashboard
-  - home
 aliases:
   - Homepage
   - MBA Home
 ---
 
-# 🎓 MBA Knowledge Vault
+# MBA Knowledge Vault
 
-> *"The only true wisdom is in knowing you know nothing."* — Socrates
-
-Welcome to your MBA Knowledge Management System, powered by **Obsidian** and structured following **ISO 19650** principles for document management.
+> *"An investment in knowledge pays the best interest."* — Benjamin Franklin
 
 ---
 
-## 🧭 Quick Navigation
+## Quick Navigation
 
 | | |
 |---|---|
-| 📚 [[MOC-Subjects\|Map of Content - Subjects]] | 📋 [[MOC-Projects\|Projects]] |
-| 📖 [[05_Resources/Books/_Index-Books\|Books & Resources]] | 📅 [[Weekly-Review\|Weekly Reviews]] |
-| 🎯 [[MOC-Goals\|Goals & Progress]] | 🏷️ [[MOC-Tags\|Tag Index]] |
+| [[Vault-Structure-Guide\|Vault Structure]] | [[Tags-Guide\|Tags Guide]] |
+| [[AI-Workflow-Guide\|AI Workflow]] | [[New-Course-Checklist\|New Course Checklist]] |
+| [[02_Thesis/00_Thesis-Home\|Thesis]] | [[Kanban-Board\|Kanban Tasks]] |
 
 ---
 
-## 📊 Study Progress
+## Active Courses
 
-### Current Semester
 ```dataview
-TABLE subject_name as "Subject", credits as "Credits", status as "Status"
-FROM "01_Core-Subjects" OR "02_Major-Subjects"
-WHERE status = "active"
-SORT subject_code ASC
+TABLE WITHOUT ID
+  file.link as "Course",
+  course_code as "Code",
+  area as "Area",
+  semester as "Sem",
+  credits as "Cr"
+FROM "01_Courses/01_Active"
+WHERE contains(tags, "type/course-home")
+SORT course_code ASC
 ```
 
-### Upcoming Deadlines
+---
+
+## Upcoming Deadlines
+
 ```dataview
-TABLE subject as "Subject", deadline as "Deadline", weight as "Weight"
-FROM #assignment
-WHERE status != "done"
-SORT deadline ASC
+TABLE WITHOUT ID
+  file.link as "Deliverable",
+  course_name as "Course",
+  due_date as "Deadline",
+  stage as "Stage"
+FROM "01_Courses/01_Active"
+WHERE due_date != null AND stage != "done" AND stage != "archive"
+SORT due_date ASC
 LIMIT 10
 ```
 
 ---
 
-## 📈 Quick Stats
+## Recently Modified
 
 ```dataview
 TABLE WITHOUT ID
-  length(filter(file.tasks, (t) => t.completed)) as "Done",
-  length(filter(file.tasks, (t) => !t.completed)) as "Pending"
-FROM "01_Core-Subjects" OR "02_Major-Subjects"
+  file.link as "Note",
+  file.folder as "Location",
+  file.mtime as "Modified"
+FROM "01_Courses" OR "02_Thesis"
+WHERE file.name != "00_Course-Home"
+SORT file.mtime DESC
+LIMIT 10
 ```
 
 ---
 
-## 🗂️ Vault Structure
+## Completed Courses
+
+```dataview
+TABLE WITHOUT ID
+  file.link as "Course",
+  course_code as "Code",
+  area as "Area"
+FROM "01_Courses/02_Completed"
+WHERE contains(tags, "type/course-home")
+SORT course_code ASC
+```
+
+---
+
+## Vault Structure
 
 ```
 028_MBA/
-├── 00_Dashboard/        → Navigation, MOCs, Daily Notes
-├── 01_Core-Subjects/    → Kiến thức cơ sở ngành
-├── 02_Major-Subjects/   → Kiến thức chuyên ngành
-├── 03_Electives/        → Môn tự chọn
-├── 04_Thesis/           → Luận văn tốt nghiệp
-├── 05_Resources/        → Tài liệu tham khảo
-├── 06_Projects/         → Bài tập, dự án
-├── 07_Templates/        → Mẫu ghi chú
-├── 08_Archive/          → Lưu trữ (hoàn thành)
-└── 09_Attachments/      → Hình ảnh, files đính kèm
+├── 00_Dashboard/           → You are here
+├── 01_Courses/
+│   ├── 01_Active/          → 18 courses
+│   ├── 02_Completed/       → Done courses
+│   └── 03_Template-Course/ → Copy for new course
+├── 02_Thesis/              → Graduation thesis
+├── 03_Resources/           → Shared resources
+├── 04_Templates/           → Master templates
+├── 90_Archive/             → Cold storage
+└── 99_Attachments/         → Shared files
 ```
 
 ---
 
-## 🏷️ Tag System
+## Quick Actions
 
-| Tag | Purpose |
-|-----|---------|
-| `#mba` | All MBA-related content |
-| `#subject` | Subject overview notes |
-| `#lecture-note` | Lecture notes |
-| `#assignment` | Assignments & homework |
-| `#case-study` | Case study analyses |
-| `#book-note` | Book notes & summaries |
-| `#framework` | Business frameworks |
-| `#status/active` | Currently studying |
-| `#status/done` | Completed |
-| `#status/draft` | Work in progress |
-| `#review` | Needs review |
-| `#important` | High priority items |
+- **New Course**: Copy `01_Courses/03_Template-Course` → rename → put in `01_Active`
+- **New Deliverable**: Copy `04_Templates/Deliverable-Template` → rename → put in course `04_Deliverables/`
+- **New Lecture Note**: Create note in course `02_Lectures/`
+- **Daily Note**: Use Calendar plugin or `Ctrl+P` → "Daily Note"
 
 ---
-
-## 📌 ISO 19650 Naming Convention
-
-> See full guide: [[Naming-Convention|📋 Naming Convention Guide]]
-
-**Format**: `[Type]-[Code]-[Description]`
-
-Examples:
-- `LN-MS01-W03-Marketing-Mix` (Lecture Note, Marketing, Week 3)
-- `ASG-CS02-Research-Proposal` (Assignment, Research Methods)
-- `CS-MS03-Vinamilk-Financial` (Case Study, Finance)
-
----
-
-## 🔗 Quick Links
-- [[07_Templates/TPL-Subject-New|➕ New Subject]]
-- [[07_Templates/TPL-Lecture-Note|📝 New Lecture Note]]
-- [[07_Templates/TPL-Assignment|📋 New Assignment]]
-- [[07_Templates/TPL-Book-Note|📖 New Book Note]]
-- [[07_Templates/TPL-Weekly-Review|📊 New Weekly Review]]
-
----
-
-*Last updated: {{date:YYYY-MM-DD}}*
+*Vault synced with [GitHub](https://github.com/nhandanhhuynh/MBA-Knowledge-Vault)*

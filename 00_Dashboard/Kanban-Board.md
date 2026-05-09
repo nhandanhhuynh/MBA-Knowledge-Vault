@@ -2,19 +2,18 @@
 kanban-plugin: basic
 tags:
   - dashboard
-  - kanban
+  - mba
 ---
 
-## Kanban - MBA Tasks
+## MBA Task Board
 
-### Backlog
-- [ ] Set up study schedule
-- [ ] Collect textbooks
-- [ ] Join study groups
+### Inbox
+- [ ] Review chương trình đào tạo chi tiết
+- [ ] Xác định môn học kỳ đầu tiên
 
-### To Do
-- [ ] Review course syllabus
-- [ ] Prepare first week materials
+### This Week
+- [ ] Setup Obsidian Git sync
+- [ ] Đọc syllabus môn đầu tiên
 
 ### In Progress
 
@@ -23,9 +22,10 @@ tags:
 
 
 ### Done
-- [x] Set up Obsidian vault
-- [x] Create folder structure
-- [x] Link with GitHub
+- [x] Tổ chức vault structure
+- [x] Tạo templates
+- [x] Liên kết GitHub
+- [x] Cấu hình Obsidian plugins
 
 %% kanban:settings
 ```
