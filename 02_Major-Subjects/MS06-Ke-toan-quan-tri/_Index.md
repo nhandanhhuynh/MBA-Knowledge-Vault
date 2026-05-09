@@ -1,4 +1,4 @@
-﻿---
+---
 subject_code: "MS06"
 subject_name: "Kế toán quản trị"
 subject_name_en: "Management Accounting"
