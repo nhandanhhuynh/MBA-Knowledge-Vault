@@ -1,0 +1,16 @@
+{
+  "renderNullAs": "\\-",
+  "taskCompletionTracking": true,
+  "taskCompletionText": "completion",
+  "recursiveSubTaskCompletion": true,
+  "warnOnEmptyResult": true,
+  "refreshEnabled": true,
+  "refreshInterval": 2500,
+  "defaultDateFormat": "YYYY-MM-DD",
+  "defaultDateTimeFormat": "YYYY-MM-DD HH:mm",
+  "maxRecursiveRenderDepth": 4,
+  "tableIdColumnName": "File",
+  "tableGroupColumnName": "Group",
+  "enableDataviewJs": true,
+  "enableInlineDataviewJs": true
+}

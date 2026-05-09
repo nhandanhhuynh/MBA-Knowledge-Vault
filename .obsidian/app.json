@@ -1,0 +1,15 @@
+{
+  "interfaceFontSize": 14,
+  "attachmentFolderPath": "09_Attachments",
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false,
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "readableLineLength": true,
+  "tabSize": 4,
+  "spellcheck": true,
+  "spellcheckLanguages": null
+}

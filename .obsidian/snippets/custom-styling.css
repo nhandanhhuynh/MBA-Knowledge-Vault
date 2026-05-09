@@ -1,0 +1,48 @@
+/* MBA Vault Custom Styling */
+
+/* Colored tags */
+.tag[href="#status/active"] { background-color: #22c55e; color: white; }
+.tag[href="#status/draft"] { background-color: #f59e0b; color: white; }
+.tag[href="#status/review"] { background-color: #3b82f6; color: white; }
+.tag[href="#status/done"] { background-color: #6b7280; color: white; }
+.tag[href="#priority/high"] { background-color: #ef4444; color: white; }
+.tag[href="#priority/medium"] { background-color: #f97316; color: white; }
+.tag[href="#important"] { background-color: #dc2626; color: white; }
+
+/* Callout styling for frameworks */
+.callout[data-callout="framework"] {
+  --callout-color: 59, 130, 246;
+  --callout-icon: lucide-box;
+}
+
+.callout[data-callout="definition"] {
+  --callout-color: 139, 92, 246;
+  --callout-icon: lucide-book-open;
+}
+
+.callout[data-callout="example"] {
+  --callout-color: 34, 197, 94;
+  --callout-icon: lucide-lightbulb;
+}
+
+/* Table improvements */
+table {
+  width: 100%;
+}
+
+th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+}
+
+/* Heading styling */
+h1 {
+  border-bottom: 2px solid var(--interactive-accent);
+  padding-bottom: 0.3em;
+}
+
+/* Checkbox done styling */
+.task-list-item-checkbox:checked + * {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

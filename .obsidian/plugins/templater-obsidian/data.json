@@ -1,0 +1,31 @@
+{
+  "templates_folder": "07_Templates",
+  "templates_pairs": [["", ""]],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "01_Core-Subjects",
+      "template": "07_Templates/TPL-Lecture-Note.md"
+    },
+    {
+      "folder": "02_Major-Subjects",
+      "template": "07_Templates/TPL-Lecture-Note.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkey_file_creation": [
+    {
+      "folder": "",
+      "template": "",
+      "filename": "",
+      "open_file": true,
+      "open_file_in_new_tab": true
+    }
+  ]
+}
