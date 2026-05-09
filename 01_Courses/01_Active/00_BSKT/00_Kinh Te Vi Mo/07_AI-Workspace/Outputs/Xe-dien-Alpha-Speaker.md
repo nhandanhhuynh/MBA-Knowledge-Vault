@@ -96,4 +96,36 @@ Ba – doanh nghiệp thống trị theo đuổi lợi nhuận tối đa chứ k
 
 Bốn – trong thị trường cạnh tranh, đua giá trị thắng đua giá bán. Khác biệt hóa sản phẩm (Product Differentiation) là vũ khí mạnh nhất để giữ quyền lực thị trường.
 
+---
+
+## [TÀI LIỆU THAM KHẢO]
+
+Các nội dung phân tích trong bài trình bày dựa trên giáo trình bài giảng Kinh tế vi mô (KTVM 2024 BSKT ThS), cụ thể:
+
+- **Câu 1** (Biến động thị trường – Cung Cầu dịch chuyển):
+  - Chương 2, Mục 2.2.3 – Các yếu tố xác định cầu và hàm số của cầu
+  - Chương 2, Mục 2.2.4 – Sự dịch chuyển của đường cầu
+  - Chương 2, Mục 2.3.3 – Các yếu tố tác động cung và hàm số của cung
+  - Chương 2, Mục 2.3.4 – Sự dịch chuyển của đường cung
+  - Chương 2, Mục 2.4.2 – Sự thay đổi của trạng thái cân bằng
+
+- **Câu 2** (Hàng thay thế, hàng bổ sung, lợi ích cận biên):
+  - Chương 2, Mục 2.2.3.1 – Giá cả hàng hóa liên quan (hàng thay thế, hàng bổ sung)
+  - Chương 2, Mục 2.6.2 – Tác động của thuế
+  - Chương 2, Mục 2.6.3 – Tác động của trợ cấp
+  - Chương 3, Mục 3.1.1 – Tổng lợi ích và lợi ích cận biên (TU, MU)
+  - Chương 3, Mục 3.1.2 – Quy luật lợi ích cận biên giảm dần
+
+- **Câu 3** (Quyết định giá và sản lượng của EcoDrive – MR=MC):
+  - Chương 4, Mục 4.2 – Lý thuyết về chi phí sản xuất (MC, AC)
+  - Chương 4, Mục 4.3 – Lý thuyết về lợi nhuận và quyết định cung cấp (MR=MC)
+  - Chương 5, Mục 5.3.2 – Đường cầu và doanh thu cận biên trong độc quyền
+  - Chương 5, Mục 5.5.1 – Đặc điểm độc quyền tập đoàn
+
+- **Câu 4** (Cạnh tranh phi giá và khác biệt hóa sản phẩm):
+  - Chương 5, Mục 5.1 – Cấu trúc thị trường
+  - Chương 5, Mục 5.4.1 – Đặc điểm của cạnh tranh độc quyền
+  - Chương 5, Mục 5.5.2 – Cân bằng trong thị trường độc quyền tập đoàn
+  - Chương 2, Mục 2.5 – Co giãn của cầu và co giãn của cung
+
 Cảm ơn mọi người đã lắng nghe. Nhóm mình sẵn sàng cho phần hỏi đáp.

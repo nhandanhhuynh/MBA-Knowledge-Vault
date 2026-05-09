@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "07_AI-Workspace/Outputs/Xe-dien-Alpha-Obsidian-Slides.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -185,6 +185,7 @@
   },
   "active": "b3d4816a37614ce2",
   "lastOpenFiles": [
+    "07_AI-Workspace/Outputs/create_pptx.py",
     "07_AI-Workspace/Outputs/Xe-dien-Alpha-Slides.md",
     "07_AI-Workspace/Outputs/images/00_boc_tach_du_lieu.png",
     "07_AI-Workspace/Outputs/~$Xe-dien-Alpha-Trinh-bay.pptx"

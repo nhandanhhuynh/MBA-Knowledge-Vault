@@ -162,9 +162,39 @@ Từ độc quyền (EcoDrive thống trị) → Độc quyền nhóm / Cạnh t
 | **Câu 3** | MR=MC: Giảm sản lượng, tăng giá vừa phải, dựa lợi thế quy mô |
 | **Câu 4** | Khác biệt hóa → Cầu ít co giãn → Quyền lực thị trường cao |
 
+---
+
+## Tài liệu tham khảo
+
+| Câu hỏi | Nội dung tham khảo từ giáo trình KTVM |
+|----------|----------------------------------------|
+| **Câu 1** | Ch.2, Mục 2.2.3 – Các yếu tố xác định cầu |
+| | Ch.2, Mục 2.2.4 – Sự dịch chuyển đường cầu |
+| | Ch.2, Mục 2.3.3 – Các yếu tố tác động cung |
+| | Ch.2, Mục 2.3.4 – Sự dịch chuyển đường cung |
+| | Ch.2, Mục 2.4.2 – Thay đổi trạng thái cân bằng |
+| **Câu 2** | Ch.2, Mục 2.2.3.1 – Hàng thay thế, hàng bổ sung |
+| | Ch.2, Mục 2.6.2 – Tác động của thuế |
+| | Ch.2, Mục 2.6.3 – Tác động của trợ cấp |
+| | Ch.3, Mục 3.1.1 – Tổng lợi ích và lợi ích cận biên |
+| | Ch.3, Mục 3.1.2 – Quy luật lợi ích cận biên giảm dần |
+| **Câu 3** | Ch.4, Mục 4.2 – Chi phí sản xuất (MC, AC) |
+| | Ch.4, Mục 4.3 – Lợi nhuận và quyết định cung cấp (MR=MC) |
+| | Ch.5, Mục 5.3.2 – Doanh thu cận biên trong độc quyền |
+| | Ch.5, Mục 5.5.1 – Đặc điểm độc quyền tập đoàn |
+| **Câu 4** | Ch.5, Mục 5.1 – Cấu trúc thị trường |
+| | Ch.5, Mục 5.4.1 – Đặc điểm cạnh tranh độc quyền |
+| | Ch.5, Mục 5.5.2 – Cân bằng trong độc quyền tập đoàn |
+| | Ch.2, Mục 2.5 – Co giãn của cầu và cung |
 
 ---
 
-# Cảm ơn mọi người đã lắng nghe
+## Ghi chú về biểu đồ
+
+Các biểu đồ là **đồ thị kinh tế lý thuyết** minh họa xu hướng dịch chuyển Cung-Cầu, MC/MR, và độ co giãn. KHÔNG phải số liệu thống kê thực tế từ Alpha.
+
+---
+
+# Cảm ơn đã lắng nghe
 
 Hỏi đáp & Thảo luận
