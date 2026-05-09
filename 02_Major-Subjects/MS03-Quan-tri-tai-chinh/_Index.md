@@ -1,4 +1,4 @@
-﻿---
+---
 subject_code: "MS03"
 subject_name: "Quản trị tài chính"
 subject_name_en: "Financial Management"

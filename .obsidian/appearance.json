@@ -1,8 +1,9 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "",
+  "cssTheme": "Minimal",
   "accentColor": "#2563eb",
   "enabledCssSnippets": [
     "custom-styling"
-  ]
+  ],
+  "theme": "obsidian"
 }
