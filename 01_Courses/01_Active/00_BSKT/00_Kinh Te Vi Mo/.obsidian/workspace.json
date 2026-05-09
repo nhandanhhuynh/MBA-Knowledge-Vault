@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f59762310bf1c5a",
@@ -185,6 +186,7 @@
   },
   "active": "b3d4816a37614ce2",
   "lastOpenFiles": [
+    "07_AI-Workspace/Outputs/make_nb.py",
     "05_Group-Work/Xe-dien-Alpha.md",
     "07_AI-Workspace/Outputs/Generate-Charts.ipynb",
     "07_AI-Workspace/Outputs/Xe-dien-Alpha-Obsidian-Slides.md",
