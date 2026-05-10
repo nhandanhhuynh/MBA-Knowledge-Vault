@@ -22,17 +22,17 @@ tags:
 ---
 ## Bóc tách dữ liệu (chi tiết)
 
-| Biến số                        | Dữ liệu                           | Loại biến                                |
-| ------------------------------ | --------------------------------- | ---------------------------------------- |
-| Thu nhập bình quân đầu người   | Tăng 10%/năm                      | Biến ngoại sinh – tác động cầu           |
-| Thuế tiêu thụ đặc biệt xe xăng | Tăng vọt                          | Biến ngoại sinh – tác động hàng thay thế |
-| Trợ cấp mua xe điện            | Trực tiếp cho người mua           | Biến ngoại sinh – dịch chuyển cầu        |
-| Giá Lithium                    | Tăng (đứt gãy chuỗi cung ứng)     | Biến ngoại sinh – tác động cung          |
-| Công nghệ pin                  | Tiến bộ, giảm chi phí sản xuất BQ | Biến ngoại sinh – tác động cung          |
-| Thị phần EcoDrive              | 60%                               | Cấu trúc thị trường                      |
-| Số đối thủ mới                 | Hơn 10 thương hiệu ngoại          | Cấu trúc thị trường                      |
-| Giá điện sạc                   | Xu hướng tăng                     | Hàng hóa bổ sung                         |
-| Chiến lược cạnh tranh          | R&D + Quảng cáo (phi giá)         | Cạnh tranh phi giá                       |
+| Biến số                        | Dữ liệu                        | Loại biến                                |
+| ------------------------------ | ------------------------------ | ---------------------------------------- |
+| Thu nhập bình quân đầu người   | Tăng 10%/năm                   | Biến ngoại sinh – tác động cầu           |
+| Thuế tiêu thụ đặc biệt xe xăng | Tăng vọt                       | Biến ngoại sinh – tác động hàng thay thế |
+| Trợ cấp mua xe điện            | Trực tiếp cho người mua        | Biến ngoại sinh – dịch chuyển cầu        |
+| Giá Lithium                    | Tăng (đứt gãy chuỗi cung ứng)  | Biến ngoại sinh – tác động cung          |
+| Công nghệ pin                  | Tiến bộ, giảm chi phí sản xuất | Biến ngoại sinh – tác động cung          |
+| Thị phần EcoDrive              | 60%                            | Cấu trúc thị trường                      |
+| Số đối thủ mới                 | Hơn 10 thương hiệu ngoại       | Cấu trúc thị trường                      |
+| Giá điện sạc                   | Xu hướng tăng                  | Hàng hóa bổ sung                         |
+| Chiến lược cạnh tranh          | R&D + Quảng cáo (phi giá)      | Cạnh tranh phi giá                       |
 
 ---
 

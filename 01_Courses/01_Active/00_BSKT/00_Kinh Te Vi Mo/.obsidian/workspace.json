@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "05_Group-Work/Xe-dien-Alpha.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6f59762310bf1c5a",
