@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "AI-Workflow-Guide",
+      "path": "00_Dashboard/AI-Workflow-Guide.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "AGENTS.md"
+    },
+    {
       "basename": "Tieu-luan-Cung-Cau-Canh-tranh-hoan-hao",
       "path": "01_Courses/01_Active/00_BSKT/00_Kinh Te Vi Mo/07_AI-Workspace/Outputs/Tieu-luan-Cung-Cau-Canh-tranh-hoan-hao.md"
     },
@@ -37,16 +49,8 @@
       "path": "01_Courses/01_Active/00_BSKT/07_AI-Workspace/Outputs/Tinh-huong-Xe-dien-Alpha-Tra-loi.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "Kanban-Board",
       "path": "00_Dashboard/Kanban-Board.md"
-    },
-    {
-      "basename": "AI-Workflow-Guide",
-      "path": "00_Dashboard/AI-Workflow-Guide.md"
     }
   ],
   "omittedPaths": [],
