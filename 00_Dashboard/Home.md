@@ -19,7 +19,8 @@ aliases:
 |---|---|
 | [[Vault-Structure-Guide\|Vault Structure]] | [[Tags-Guide\|Tags Guide]] |
 | [[AI-Workflow-Guide\|AI Workflow]] | [[New-Course-Checklist\|New Course Checklist]] |
-| [[02_Thesis/00_Thesis-Home\|Thesis]] | [[Kanban-Board\|Kanban Tasks]] |
+| [[LLM-Wiki-Integration-Guide\|LLM Wiki Integration]] | [[Kanban-Board\|Kanban Tasks]] |
+| [[02_Thesis/00_Thesis-Home\|Thesis]] | |
 
 ---
 

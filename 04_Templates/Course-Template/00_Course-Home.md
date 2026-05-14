@@ -63,6 +63,7 @@ tags:
 - **Group Work**: [[05_Group-Work/]]
 - **Exam Prep**: [[06_Exam-Prep/]]
 - **AI Workspace**: [[07_AI-Workspace/]]
+- **Wiki**: [[08_Wiki/index]]
 
 ---
 
