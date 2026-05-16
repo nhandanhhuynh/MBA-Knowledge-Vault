@@ -235,6 +235,102 @@ function Add-ZipEntryFile {
     try { $source.CopyTo($dest) } finally { $source.Dispose(); $dest.Dispose() }
 }
 
+function LatexToken-ToOmml {
+    param([string]$Token)
+    $Token = $Token.Trim()
+    if ($Token -eq '') { return '' }
+    $Token = $Token -replace '\\pi', "\u{03C0}"
+    $Token = $Token -replace '\\,', ''
+    $Token = $Token -replace '\\ ', ''
+
+    if ($Token -match '^(.+)_\{([^}]+)\}\^\{([^}]+)\}$') {
+        $base = $Matches[1]; $sub = $Matches[2]; $sup = $Matches[3]
+        return "<m:sSubSup><m:sSubSupPr><m:ctrlPr/></m:sSubSupPr><m:e><m:r><m:t>$base</m:t></m:r></m:e><m:sub><m:r><m:t>$sub</m:t></m:r></m:sub><m:sup><m:r><m:t>$sup</m:t></m:r></m:sup></m:sSubSup>"
+    }
+    if ($Token -match '^(.+)\^\{([^}]+)\}$') {
+        $base = $Matches[1]; $sup = $Matches[2]
+        return "<m:sSup><m:sSupPr><m:ctrlPr/></m:sSupPr><m:e><m:r><m:t>$base</m:t></m:r></m:e><m:sup><m:r><m:t>$sup</m:t></m:r></m:sup></m:sSup>"
+    }
+    if ($Token -match '^(.+)_\{([^}]+)\}$') {
+        $base = $Matches[1]; $sub = $Matches[2]
+        return "<m:sSub><m:sSubPr><m:ctrlPr/></m:sSubPr><m:e><m:r><m:t>$base</m:t></m:r></m:e><m:sub><m:r><m:t>$sub</m:t></m:r></m:sub></m:sSub>"
+    }
+    if ($Token -match '^(.)\^(.)$') {
+        $base = $Matches[1]; $sup = $Matches[2]
+        return "<m:sSup><m:sSupPr><m:ctrlPr/></m:sSupPr><m:e><m:r><m:t>$base</m:t></m:r></m:e><m:sup><m:r><m:t>$sup</m:t></m:r></m:sup></m:sSup>"
+    }
+    if ($Token -match '^(.)_(.)$') {
+        $base = $Matches[1]; $sub = $Matches[2]
+        return "<m:sSub><m:sSubPr><m:ctrlPr/></m:sSubPr><m:e><m:r><m:t>$base</m:t></m:r></m:e><m:sub><m:r><m:t>$sub</m:t></m:r></m:sub></m:sSub>"
+    }
+    return "<m:r><m:t>$Token</m:t></m:r>"
+}
+
+function Latex-ToOmml {
+    param([string]$Latex)
+    $Latex = $Latex.Trim()
+    $Latex = $Latex -replace '\\pi', "`u{03C0}"
+    $Latex = $Latex -replace '\\,', ' '
+    $Latex = $Latex -replace '\\\s', ' '
+    $Latex = $Latex -replace '\\text\{([^}]+)\}', '$1'
+    $parts = [regex]::Split($Latex, '(\s+|(?<=[=(),])|(?=[=(),]))')
+    $omml = New-Object System.Collections.Generic.List[string]
+    foreach ($p in $parts) {
+        $t = $p.Trim()
+        if ($t -eq '') { continue }
+        if ($t -match '^[=(),\.+\-\u2026]$' -or $t -eq '...' -or $t -eq "`u{2014}") {
+            $omml.Add("<m:r><m:t xml:space=`"preserve`"> $t </m:t></m:r>")
+        } else {
+            $omml.Add((LatexToken-ToOmml $t))
+        }
+    }
+    return $omml -join ''
+}
+
+function New-BlockMathXml {
+    param([string]$Latex)
+    $inner = Latex-ToOmml $Latex
+    return @"
+<w:p>
+  <w:pPr><w:jc w:val="center"/><w:spacing w:line="288" w:lineRule="auto" w:before="120" w:after="120"/></w:pPr>
+  <m:oMathPara xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math">
+    <m:oMath>$inner</m:oMath>
+  </m:oMathPara>
+</w:p>
+"@
+}
+
+function Convert-InlineMathRuns {
+    param([string]$Text, [switch]$Bold, [switch]$Italic)
+    $segments = [regex]::Split($Text, '(\$[^$]+\$)')
+    $runs = New-Object System.Collections.Generic.List[string]
+    foreach ($seg in $segments) {
+        if ($seg -match '^\$(.+)\$$') {
+            $latex = $Matches[1]
+            $inner = Latex-ToOmml $latex
+            $runs.Add("<m:oMath xmlns:m=`"http://schemas.openxmlformats.org/officeDocument/2006/math`">$inner</m:oMath>")
+        } elseif ($seg -ne '') {
+            $runs.Add((New-RunXml -Text $seg -Bold:$Bold -Italic:$Italic))
+        }
+    }
+    return $runs -join ''
+}
+
+function New-ParagraphWithMathXml {
+    param(
+        [string]$Text,
+        [string]$Style = 'Normal',
+        [string]$Justification = 'both',
+        [switch]$Bold,
+        [switch]$Italic
+    )
+    $pPr = @("<w:pStyle w:val=`"$Style`"/>")
+    $pPr += "<w:jc w:val=`"$Justification`"/>"
+    $pPr += '<w:spacing w:line="288" w:lineRule="auto" w:before="0" w:after="120"/>'
+    $content = Convert-InlineMathRuns -Text $Text -Bold:$Bold -Italic:$Italic
+    return "<w:p><w:pPr>$($pPr -join '')</w:pPr>$content</w:p>"
+}
+
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $mdPath = Join-Path $root 'Tieu-luan-Cung-Cau-Canh-tranh-hoan-hao.md'
 $docxPath = Join-Path $root 'Tieu-luan-Cung-Cau-Canh-tranh-hoan-hao.docx'
@@ -338,13 +434,22 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
         continue
     }
 
-    if ($trimmed.StartsWith('*') -and $trimmed.EndsWith('*')) {
+    if ($trimmed -match '^\$\$(.+)\$\$$') {
+        $body.Add((New-BlockMathXml -Latex $Matches[1]))
+        continue
+    }
+
+    if ($trimmed.StartsWith('*') -and $trimmed.EndsWith('*') -and -not $trimmed.Contains('$')) {
         $body.Add((New-ParagraphXml -Text $trimmed.Trim('*') -Style 'Normal' -Justification 'left' -Italic))
         continue
     }
 
     $text = $trimmed -replace '\*\*', '' -replace '\*', ''
-    $body.Add((New-ParagraphXml -Text $text -Style 'Normal' -Justification 'both'))
+    if ($text.Contains('$')) {
+        $body.Add((New-ParagraphWithMathXml -Text $text -Style 'Normal' -Justification 'both'))
+    } else {
+        $body.Add((New-ParagraphXml -Text $text -Style 'Normal' -Justification 'both'))
+    }
 }
 
 $documentXml = @"
