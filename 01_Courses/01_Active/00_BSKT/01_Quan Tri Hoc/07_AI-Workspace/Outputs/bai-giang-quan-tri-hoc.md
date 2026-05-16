@@ -20,17 +20,19 @@ lang: vi
 
 ## Mục lục nhanh
 
-- [[#PHẦN 1 NHỮNG VẤN ĐỀ CHUNG VỀ QUẢN TRỊ HỌC]]
-  - [[#CHƯƠNG 1 KHÁI QUÁT VỀ TỔ CHỨC VÀ NHÀ QUẢN TRỊ]]
-  - [[#CHƯƠNG 2 SỰ TIẾN TRIỂN CỦA TƯ TƯỞNG QUẢN TRỊ]]
-  - [[#CHƯƠNG 3 MÔI TRƯỜNG CỦA TỔ CHỨC]]
-  - [[#CHƯƠNG 4 VĂN HÓA VỚI QUẢN TRỊ CỦA TỔ CHỨC]]
-  - [[#CHƯƠNG 5 QUYẾT ĐỊNH QUẢN TRỊ]]
-- [[#PHẦN 2 CÁC CHỨC NĂNG CỦA QUẢN TRỊ]]
-  - [[#CHƯƠNG 6 HOẠCH ĐỊNH]]
-  - [[#CHƯƠNG 7 TỔ CHỨC]]
-  - [[#CHƯƠNG 8 ĐIỀU KHIỂN LÃNH ĐẠO]]
-  - [[#CHƯƠNG 9 KIỂM TRA]]
+- [[#PHẦN 1: NHỮNG VẤN ĐỀ CHUNG VỀ QUẢN TRỊ HỌC]]
+  - [[#CHƯƠNG 1: KHÁI QUÁT VỀ TỔ CHỨC VÀ NHÀ QUẢN TRỊ]]
+  - [[#CHƯƠNG 2: SỰ TIẾN TRIỂN CỦA TƯ TƯỞNG QUẢN TRỊ]]
+  - [[#CHƯƠNG 3: MÔI TRƯỜNG CỦA TỔ CHỨC]]
+  - [[#CHƯƠNG 4: VĂN HÓA VỚI QUẢN TRỊ CỦA TỔ CHỨC]]
+  - [[#CHƯƠNG 5: QUYẾT ĐỊNH QUẢN TRỊ]]
+- [[#PHẦN 2: CÁC CHỨC NĂNG CỦA QUẢN TRỊ]]
+  - [[#CHƯƠNG 6: HOẠCH ĐỊNH]]
+  - [[#CHƯƠNG 7: TỔ CHỨC]]
+  - [[#CHƯƠNG 8: ĐIỀU KHIỂN (LÃNH ĐẠO)]]
+  - [[#CHƯƠNG 9: KIỂM TRA]]
+
+> Nếu liên kết mục lục không nhảy đúng trong Vault của bạn, hãy dùng Outline của Obsidian hoặc chỉnh lại slug theo cách Obsidian đang render heading.
 
 ---
 
@@ -392,9 +394,9 @@ Phần hai làm “ướt tay” các chức năng lõi của [[Quản trị]]: 
 
 **Span of control ([[Phạm vi quản trị]]):**
 
-- Đơn giản và trùng khớp vai trò: thường từ **12–15** cấp dưới trực tiếp (điều kiện thích hợp).
-- Trong điều kiện công việc bình thường, nhiều tổ chức giao cho một quản trị viên **3–9** cấp dưới trực tiếp, phụ thuộc chức năng và kỹ năng.
-- Việc *phức tạp / chất lượng cao*: **2–3** để vẫn huấn luyện sâu được.
+- **3–9** cấp dưới trực tiếp là **thường gặp** trong điều kiện tổ chức bình quân (tùy chức năng, văn hóa và công cụ MIS).
+- **12–15** khi loại công việc **đơn giản**, chuẩn hoá và giám sát được hỗ trợ mạnh bằng quy chuẩn — có thể mở *span rộng* nếu không vỡ thông tin.
+- **2–3** khi công việc **phức tạp** hoặc đòi hỏi huấn luyện–chất lượng cao (*span hẹp* để không “vã” chất lượng chỉ đạo).
 
 **Quyền hành theo Weber:** có nguồn *hợp pháp*, được nhóm nhận thức *thừa nhận*, và chủ thể có *khả năng/thực sự ép buộc* thực thi khi thiết yếu. **[[Phân cấp]]** triển khai quyền dọc các cấp — kèm đồng bộ báo cáo và chỉ báo để không vỡ thông tin.
 
